@@ -116,7 +116,7 @@ metadata:
 spec:
   groups:
   - system:authenticated
-  request: $(cat "$SERVER_CSR" | base64 -w 0)
+  request: $(cat "$SERVER_CSR" | base64 -b 0)
   usages:
   - digital signature
   - key encipherment
